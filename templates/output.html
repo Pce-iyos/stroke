@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='js/bootstrap.min.css') }}">
+    
+
+  <title>Stroke Predictor</title>
+
+  <script src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <link href="{{ url_for('static', filename='fontawesome/css/all.css')}}" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+
+    <style>
+        body{
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        .y:link{
+        	color: rgba(255,255,255,0.8);
+        	border-bottom: 0;
+        }
+        .y:hover{
+            color:#fff
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container" style="font-size:15px; padding-left:0px; padding-right:0px">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:white !important">
+        <a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='img/strokelogo.png')}}" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="padding-right:20px">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="padding-right:20px">About Us</a>
+            </li>
+            
+            <li class="nav-item" href="#" style="padding-right:20px">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item active" href="index.html" style="padding-right:20px">
+                <a class="nav-link" href="index.html">Stroke Predictor </a>
+            </li>
+        
+            </ul>
+    
+        </div>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid" style="padding:0px; margin:0px; background-image:url('static/img/banner2.jpg'); height:600px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-9">
+                    <h1 style="font-size:30px; background-color: rgba(34, 5, 87, 0.1); color:#e0e2ee; font-weight:bold; padding:20px; margin-top:30px">Supporting people to grow in confidence and take greater control of their health is our primary focus.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top:40px; padding-bottom:60px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="padding-bottom:0px; margin-bottom:0px"><strong><span style="color:#2C3B8D">Stroke</span> <span style="color:#E90760">Predictor Result:</span></strong></h1>
+                <hr style="border:solid 1px #2C3B8D; width:420px; display: inline-block;" />
+            </div>
+			
+			<div class="col-md-8">
+				<div>
+					<p style="font-size:14px"><i class="fas fa-list-alt" aria-hidden="true"></i> Find Your Stroke Predictor Result Below:</p>
+				</div>
+				
+				<div>
+					<h2>Result:</h2>
+					
+					<dl>
+						<dt>The Status is : {{data}}</dt>
+						
+					</dl>
+					
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<img src="{{ url_for('static', filename='img/results.png')}}" style="width:100%" />
+			</div>
+			
+            <div class="col-md-12" style="padding-top:10px; font-size:14px">
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+    
+    <div class="container-fluid" style="background-color:#16205A; padding-top:70px; padding-bottom:70px">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12" style="text-align: center">
+                    <img src="{{ url_for('static', filename='img/strokelogo.png')}}" style="width:15%;" />
+                </div>
+
+                <div class="col-md-12" style="font-size:14px; text-align:center; color:#fff; padding-top:20px; padding-bottom:20px">
+                    <a href="#" class="y">Contact Us</a> | <a href="#" class="y">Site Map</a> | <a href="#" class="y">Cookie Policy</a> | <a href="#" class="y">Privacy Policy</a> | <a href="#" class="y">Safeguarding Policy</a> |
+                    <a href="#" class="y" href="#" class="y">Complaints</a> | <a href="#" class="y">Accessibility</a> | <a href="#" class="y">Careers</a>
+                </div>
+
+                <div class="col-md-12" style="font-size:50px; color:#fff; text-align:center">
+                    <i class="fab fa-twitter"></i> &nbsp;   <i class="fab fa-facebook-f"></i>  &nbsp;   
+                    <i class="fab fa-linkedin-in"></i> &nbsp;     <i class="fab fa-youtube"></i>
+                </div>
+
+                <div class="col-md-12" style="color:#fff; font-size:12px; padding-top:20px; text-align:center">
+                  © Copyright MoreLife 2018. The MoreLife words and associated logos are trademarks of MoreLife (UK) Ltd 2014. All rights reserved. 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
