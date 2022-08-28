@@ -136,9 +136,9 @@ def predict():
             smoking_status_never_smoked,smoking_status_smokes]])[0]
 
         if prediction == 1:
-            prediction = "Stroke Present"
+            prediction = " Stroke"
         else:
-            prediction = "Stroke Absent"    
+            prediction = " No Stroke"    
 
         return render_template('output.html', data= prediction) 
 
